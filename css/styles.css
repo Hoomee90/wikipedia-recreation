@@ -2,7 +2,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.subheading {
-  font-family: 'Times New Roman', Times, serif;
-  font-size: 17px;
+.container {
+  margin-left: 2em;
+  margin-right: 2em;
 }
