@@ -5,3 +5,13 @@ body {
 .card-header {
   font-weight: bold;
 }
+
+.footer {
+  font-weight: bold;
+  text-align: right;
+  margin-bottom: 0px;
+}
+
+.card-text {
+  margin-bottom: 8px;
+}
