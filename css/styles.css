@@ -15,3 +15,7 @@ body {
 .card-text {
   margin-bottom: 8px;
 }
+
+.bg-primary a {
+  text-shadow: 0px 0px 5px black;
+}
