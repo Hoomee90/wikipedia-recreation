@@ -67,5 +67,19 @@ window.onload = function() {
       text.style.fontSize = "70px";
     });
   };
+
+  smallButton.onclick = function() {
+
+    classExchange(smallContainer, largeContainer, "active", "active");
+    classExchange(pageContainer, pageContainer, "container-fluid", "container");
+    welcomeText.style.fontSize = "2rem";
+
+    paraText.forEach(text => {
+      text.style.fontSize = "1rem";
+    });
+    titleText.forEach(text => {
+      text.style.fontSize = "1.5rem";
+    });
+  };
 };
 
