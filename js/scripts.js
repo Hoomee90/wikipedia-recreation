@@ -22,6 +22,7 @@ window.onload = function() {
 
     lightCards.forEach(card => {
       classExchange(card, card, "bg-light", "bg-dark")
+      classExchange(card, card, "text-dark", "text-light")
     });
   };
 
@@ -33,6 +34,7 @@ window.onload = function() {
 
     darkCards.forEach(card => {
       classExchange(card, card, "bg-dark", "bg-light")
+      classExchange(card, card, "text-light", "text-dark")
     });
   };
 };
