@@ -2,11 +2,23 @@
 
 window.onload = function() {
   const body = document.querySelector("body");
+  const pageContainer = document.querySelector(".container")
+
+  const welcomeText = document.querySelector("h2");
+  const paraText = document.querySelectorAll("p");
+  const titleText = document.querySelectorAll("h4");
 
   const darkButton = document.getElementById("option2");
   const darkContainer = darkButton.parentElement;
+
   const lightButton = document.getElementById("option1");
   const lightContainer = lightButton.parentElement;
+
+  const smallButton = document.getElementById("option3");
+  const smallContainer = smallButton.parentElement;
+
+  const largeButton = document.getElementById("option4");
+  const largeContainer = largeButton.parentElement;
 
   classExchange = function (receiver, giver, toGive, toReceive) {
     giver.classList.remove(toGive);
@@ -41,4 +53,19 @@ window.onload = function() {
       classExchange(card, card, "text-light", "text-dark");
     });
   };
+
+  largeButton.onclick = function() {
+
+    classExchange(largeContainer, smallContainer, "active", "active");
+    classExchange(pageContainer, pageContainer, "container", "container-fluid");
+    welcomeText.style.fontSize = "100px";
+
+    paraText.forEach(text => {
+      text.style.fontSize = "40px";
+    });
+    titleText.forEach(text => {
+      text.style.fontSize = "70px";
+    });
+  };
 };
+
